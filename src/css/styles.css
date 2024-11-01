@@ -12,7 +12,155 @@
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f5f5f5;
+}
+
+/* Timer  */
+input[type='text'] {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  background: #fff;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  margin-top: 36px;
+  margin-bottom: 32px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+input[type='text']:hover,
+input[type='text']:focus {
+  border: 1px solid #000;
+}
+input[type='text']:active {
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+input[type='text']:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+  background: #fafafa;
+}
+
+button[type='button'] {
+  border-radius: 8px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+button[type='button']:hover {
+  background: #6c8cff;
+}
+button[type='button']:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  width: 346px;
+  height: 72px;
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  width: 82px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/*  Snackbar  */
+
+.form {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 360px;
+}
+
+label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+input[type='number'] {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+
+input[type='number']:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+fieldset {
+  width: 340px;
+  height: 64px;
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  margin-bottom: 24px;
+}
+legend {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background: #6c8cff;
+}
